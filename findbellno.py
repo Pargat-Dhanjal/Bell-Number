@@ -2,8 +2,7 @@ n=int(input("Enter the number whose Bell Number you would like to find :- "))+2
 def bell(num):
     lst_o = [0]*num # old list
     lst_n = [1]*num # new list
-    j = 0
-    k = 0
+    j,k=0,0
     for i in range(num):
         for j in range(i):
              if j>0:
