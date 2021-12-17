@@ -3,10 +3,10 @@ n = int(
 
 
 def bell(num):
-    lst_o = [0] * num  # old list
-    lst_n = [1] * num  # new list
-    j = 0
-    k = 0
+    lst_o = [0]*num # old list
+    lst_n = [1]*num # new list
+    j,k=0,0
+
     for i in range(num):
         for j in range(i):
             if j > 0:
@@ -18,6 +18,4 @@ def bell(num):
         lst_n[0] = lst_n[
             j]  # making the last varible of old list the first varible of the new list
     return k
-
-
-print("The Bell Number of", n - 2, "is", bell(n))
+print("The Bell Number of",n-2,"is",bell(n))
